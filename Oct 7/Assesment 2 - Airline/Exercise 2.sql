@@ -1,0 +1,3 @@
+SELECT *
+FROM flights
+WHERE ticket_price BETWEEN 6000 AND 20000;
