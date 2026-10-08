@@ -1,0 +1,23 @@
+Embedding :
+
+// Courses
+
+Course Details is Embedded Directly to the course.
+
+{
+course_id : 1
+course_name : "DSA"
+course_details : { Chapter no : 1, Title : "Basics of DSA", Duration: "2 hrs"}
+}   
+
+Referencing:
+
+// Students 
+
+Course taken by students is referenced with the course ID.
+
+{
+student_id : 101
+student_name : "Balaji"
+course_id : 1
+} 

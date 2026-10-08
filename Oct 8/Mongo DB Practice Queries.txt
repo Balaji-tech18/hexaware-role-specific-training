@@ -1,0 +1,13 @@
+Practice Queries:
+1. db.datatype_practice.find()
+2. db.datatype_practice.find({stock:{$lt:10}})
+3. db.datatype_practice.find({available:true})
+4. db.datatype_practice.find({launch_date:{$gt:new ISODate("2026-01-01T00:00:00Z")}})
+5. db.datatype_practice.find({colors:['Black','Blue']})
+6. db.datatype_practice.find({"details.brand":'Sony'})
+7. db.datatype_practice.find({"details.brand":'Samsung'})
+8. db.datatype_practice.updateOne({product_id:502},{$inc:{stock:5}})
+9. db.datatype_practice.updateOne({product_id:503},{$set:{available:1}})
+10. db.datatype_practice.updateOne({product_id:501},{$push:{colors:'White'}})
+11. db.datatype_practice.updateOne({product_id:502},{$set:{"details.waranty_years":2}})
+12. db.datatype_practice.aggregate([{$project:{field:"price",datatype:{$type:"$price"}}},{$limit:1}])
