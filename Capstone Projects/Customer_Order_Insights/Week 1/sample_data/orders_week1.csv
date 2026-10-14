@@ -1,0 +1,8 @@
+order_id,customer_id,customer_name,region,order_date,expected_delivery_date,actual_delivery_date,status,issue_type,order_amount
+1001,1,Arun Kumar,South,2026-09-20,2026-09-25,2026-09-28,Delivered,Courier delay,2499.00
+1002,1,Arun Kumar,South,2026-10-01,2026-10-08,,In Transit,Weather delay,1299.00
+1003,2,Meena Ravi,South,2026-09-22,2026-09-28,2026-09-27,Delivered,,799.00
+1004,3,Rahul Sharma,South,2026-10-02,2026-10-07,,In Transit,Sorting facility backlog,5499.00
+1005,4,Priya Nair,South,2026-09-25,2026-09-30,2026-09-30,Delivered,,1899.00
+1006,5,Karan Shah,West,2026-10-03,2026-10-15,,Packed,,999.00
+1007,2,Meena Ravi,South,2026-10-10,2026-10-17,,Placed,,1599.00

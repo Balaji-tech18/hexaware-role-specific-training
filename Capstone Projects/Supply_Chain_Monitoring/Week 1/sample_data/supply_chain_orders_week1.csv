@@ -1,0 +1,7 @@
+order_id,supplier_id,supplier_name,product_name,order_date,expected_delivery_date,actual_delivery_date,quantity,order_status,quantity_on_hand,reorder_level
+2001,201,Southern Components Ltd,USB-C Cable,2026-09-20,2026-09-25,2026-09-24,500,Delivered,40,100
+2002,202,Metro Packaging Co,Shipping Box - Medium,2026-09-22,2026-09-28,,1000,Delayed,450,200
+2003,203,Greenline Electronics,Wireless Mouse,2026-10-01,2026-10-07,,250,In Transit,25,50
+2004,204,Reliable Plastics,Plastic Storage Bin,2026-10-02,2026-10-09,2026-10-11,150,Delivered,180,60
+2005,201,Southern Components Ltd,USB-C Cable,2026-10-05,2026-10-12,,300,Placed,40,100
+2006,203,Greenline Electronics,Keyboard,2026-10-06,2026-10-10,,100,Delayed,10,40
