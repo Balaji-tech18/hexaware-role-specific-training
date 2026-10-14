@@ -1,0 +1,196 @@
+Data Setup:
+
+use food_delivery_assessment
+
+db.restaurants.insertMany([
+  {
+    restaurant_id: 101,
+    restaurant_name: "Spice Kitchen",
+    city: "Hyderabad",
+    cuisine: ["Indian", "Biryani"],
+    rating: 4.5,
+    active: true,
+    contact: { phone: "9876543210", email: "spice@email.com" }
+  },
+  {
+    restaurant_id: 102,
+    restaurant_name: "Urban Pizza",
+    city: "Mumbai",
+    cuisine: ["Italian", "Fast Food"],
+    rating: 4.2,
+    active: true,
+    contact: { phone: "9988776655", email: "pizza@email.com" }
+  },
+  {
+    restaurant_id: 103,
+    restaurant_name: "Green Bowl",
+    city: "Bangalore",
+    cuisine: ["Healthy", "Vegetarian"],
+    rating: 4.7,
+    active: true,
+    contact: { phone: "9123456780", email: "green@email.com" }
+  },
+  {
+    restaurant_id: 104,
+    restaurant_name: "Burger Point",
+    city: "Hyderabad",
+    cuisine: ["Fast Food", "Burgers"],
+    rating: 3.9,
+    active: false,
+    contact: { phone: "9000011111", email: "burger@email.com" }
+  },
+  {
+    restaurant_id: 105,
+    restaurant_name: "Asian Wok",
+    city: "Delhi",
+    cuisine: ["Chinese", "Thai"],
+    rating: 4.4,
+    active: true,
+    contact: { phone: "9222233333", email: "wok@email.com" }
+  }
+])
+
+db.orders.insertMany([
+  {
+    order_id: 5001,
+    restaurant_id: 101,
+    customer_name: "Adil",
+    order_date: ISODate("2026-09-01"),
+    status: "Delivered",
+    items: [
+      { name: "Chicken Biryani", quantity: 2, price: 320 },
+      { name: "Coke", quantity: 2, price: 60 }
+    ],
+    delivery: { city: "Hyderabad", fee: 40 }
+  },
+  {
+    order_id: 5002,
+    restaurant_id: 102,
+    customer_name: "Megha",
+    order_date: ISODate("2026-09-02"),
+    status: "Processing",
+    items: [{ name: "Farmhouse Pizza", quantity: 1, price: 550 }],
+    delivery: { city: "Mumbai", fee: 60 }
+  },
+  {
+    order_id: 5003,
+    restaurant_id: 103,
+    customer_name: "Kabir",
+    order_date: ISODate("2026-09-03"),
+    status: "Delivered",
+    items: [
+      { name: "Protein Bowl", quantity: 2, price: 400 },
+      { name: "Juice", quantity: 1, price: 150 }
+    ],
+    delivery: { city: "Bangalore", fee: 50 }
+  },
+  {
+    order_id: 5004,
+    restaurant_id: 101,
+    customer_name: "Nisha",
+    order_date: ISODate("2026-09-04"),
+    status: "Cancelled",
+    items: [{ name: "Veg Biryani", quantity: 1, price: 250 }],
+    delivery: { city: "Hyderabad", fee: 40 }
+  },
+  {
+    order_id: 5005,
+    restaurant_id: 105,
+    customer_name: "Rohan",
+    order_date: ISODate("2026-09-05"),
+    status: "Delivered",
+    items: [
+      { name: "Thai Curry", quantity: 1, price: 480 },
+      { name: "Noodles", quantity: 2, price: 300 }
+    ],
+    delivery: { city: "Delhi", fee: 70 }
+  }
+])
+
+CRUD and Basic Queries:
+
+1. db.restaurants.find()
+
+2. db.restaurants.find({city:"Hyderabad"})
+
+3. db.restaurants.find({active:true,rating:{$gt:4.3}})
+
+4. db.restaurants.insertOne({restaurant_id:106,restaurant_name:"Coastal Bites",city:"Chennai",cuisine:["Indian","Seafood"],rating:4.3,active:true,contact:{phone:"9345678901",email:"coastal@email.com"}})
+
+5. db.restaurants.updateOne({restaurant_id:104},{$set:{rating:4.1}})
+
+6. db.restaurants.updateOne({restaurant_id:104},{$set:{active:true}})
+
+7. db.restaurants.deleteOne({restaurant_id:106})
+
+Arrays and Embedded Documents:
+
+8. db.restaurants.find({cuisine:"Fast Food"})
+
+9. db.restaurants.find({cuisine:{$all:["Italian","Fast Food"]}})
+
+10. db.restaurants.updateOne({restaurant_id:102},{$addToSet:{cuisine:"Desserts"}})
+
+11. db.restaurants.updateOne({restaurant_id:103},{$set:{"contact.email":"greenbowl@email.com"}})
+
+12. db.restaurants.find({"contact.phone":/^9/})
+
+Orders:
+
+13. db.orders.find({status:"Delivered"})
+
+14. db.orders.find({order_date:{$gt:ISODate("2026-09-02T00:00:00Z")}})
+
+15. db.orders.find({"delivery.city":"Hyderabad"})
+
+16. db.orders.find({"items.name":"Noodles"})
+
+17. db.orders.find({"items.quantity":{$gt:1}})
+
+18. db.orders.find({items:{$elemMatch:{name:"Chicken Biryani",quantity:2}}})
+
+19. db.orders.updateOne({order_id:5002},{$push:{items:{name:"Garlic Bread",quantity:1,price:120}}})
+
+20. db.orders.updateOne({order_id:5002},{$set:{status:"Delivered"}})
+
+Projection and Sorting
+
+21. db.restaurants.find({},{_id:0,restaurant_name:1,city:1,rating:1})
+
+22. db.restaurants.find().sort({rating:-1})
+
+23. db.restaurants.find().sort({rating:-1}).limit(3)
+
+24. db.restaurants.find({rating:{$type:["double","int","long","decimal"]}})
+
+25. db.orders.aggregate([{$project:{_id:0,order_id:1,order_date_type:{$type:"$order_date"}}}])
+
+26. db.orders.aggregate([{$project:{_id:0,order_id:1,items_type:{$type:"$items"}}}])
+
+27. db.restaurants.insertOne({restaurant_id:199,restaurant_name:"Leo Cafe",city:"Chennai",cuisine:["Cafe"],rating:"4.6",active:true,contact:{phone:"9555512345",email:"typetest@email.com"}})
+
+   db.restaurants.find({rating:{$type:"string"}})
+
+   db.restaurants.updateOne({restaurant_id:199},[{$set:{rating:{$toDouble:"$rating"}}}])
+
+Final Challenge:
+
+
+28. db.createCollection("delivery_partners")
+
+db.delivery_partners.insertMany([
+  {partner_id:201,partner_name:"Arun Kumar",city:"Hyderabad",rating:4.6,active:true,vehicle:"Bike",service_areas:["Madhapur","Gachibowli"],contact:{phone:"9876500001",email:"arun@email.com"}},
+  {partner_id:202,partner_name:"Priya Nair",city:"Mumbai",rating:4.2,active:true,vehicle:"Scooter",service_areas:["Andheri","Bandra"],contact:{phone:"9876500002",email:"priya@email.com"}},
+  {partner_id:203,partner_name:"Karthik Raj",city:"Hyderabad",rating:3.9,active:false,vehicle:"Bike",service_areas:["Kukatpally","Miyapur"],contact:{phone:"9876500003",email:"karthik@email.com"}},
+  {partner_id:204,partner_name:"Sneha Das",city:"Bangalore",rating:4.8,active:true,vehicle:"Electric Bike",service_areas:["Whitefield","Indiranagar"],contact:{phone:"9876500004",email:"sneha@email.com"}}
+])
+
+29. db.delivery_partners.find({city:"Hyderabad",active:true})
+
+30. db.delivery_partners.find({rating:{$gt:4}})
+
+31. db.delivery_partners.updateOne({partner_id:201},{$addToSet:{service_areas:"Kondapur"}})
+
+32. db.delivery_partners.updateOne({partner_id:202},{$set:{rating:4.5}})
+
+33. db.delivery_partners.find().sort({rating:-1})

@@ -1,0 +1,299 @@
+Assessment 1
+
+Part 1 - Database Setup:
+
+use commerce_assessment
+db.createCollection("products")
+
+
+db.products.insertMany([
+{
+product_id: 101,
+product_name: "Ultra Laptop",
+category: "Electronics",
+brand: "TechPro",
+price: 72000,
+stock: 12,
+available: true,
+launch_date: ISODate("2026-01-15"),
+colors: ["Black", "Silver"],
+specifications: {
+ram: "16 GB",
+storage: "1 TB SSD",
+warranty_years: 2
+}
+},
+{
+product_id: 102,
+
+product_name: "Wireless Mouse",
+category: "Accessories",
+brand: "ClickMax",
+price: 1800,
+stock: 40,
+available: true,
+launch_date: ISODate("2026-02-10"),
+colors: ["Black", "Blue", "Red"],
+specifications: {
+wireless: true,
+warranty_years: 1
+}
+},
+{
+product_id: 103,
+product_name: "Office Desk",
+category: "Furniture",
+brand: "WorkSpace",
+price: 14500,
+stock: 8,
+available: true,
+launch_date: ISODate("2025-11-20"),
+colors: ["Brown", "Black"],
+specifications: {
+material: "Wood",
+adjustable: false,
+warranty_years: 3
+}
+},
+{
+product_id: 104,
+product_name: "Smart Monitor",
+category: "Electronics",
+brand: "VisionPlus",
+price: 26000,
+stock: 5,
+available: true,
+launch_date: ISODate("2026-03-01"),
+colors: ["Black"],
+specifications: {
+screen_size: "27 inch",
+resolution: "4K",
+warranty_years: 2
+}
+
+},
+{
+product_id: 105,
+product_name: "Gaming Chair",
+category: "Furniture",
+brand: "SeatPro",
+price: 18500,
+stock: 0,
+available: false,
+launch_date: ISODate("2026-01-05"),
+colors: ["Black", "Red"],
+specifications: {
+material: "Leather",
+adjustable: true,
+warranty_years: 3
+}
+},
+{
+product_id: 106,
+product_name: "Mechanical Keyboard",
+category: "Accessories",
+brand: "KeyWorks",
+price: 5200,
+stock: 18,
+available: true,
+launch_date: ISODate("2026-04-12"),
+colors: ["Black", "White"],
+specifications: {
+backlit: true,
+wireless: false,
+warranty_years: 1
+}
+}
+])
+
+
+Part 2 - CRUD:
+
+db.products.find()
+
+db.products.find({product_id:103})
+
+db.products.insertOne({product_id:107,product_name:"Bluetooth Speaker",category:"Electronics",brand:"SoundMax",price:7500,stock:20,available:true})
+
+db.products.insertMany([{product_id:108,product_name:"PC",category:"Electronics",brand:"Dell",price:75500,stock:2,available:true},{product_id:109,product_name:"Jeans",category:"Dress",brand:"Levis",price:6500,stock:10,available:true}])
+
+db.products.updateOne({product_id:102},{$set:{price:2000}})
+
+db.products.updateOne({product_id:105},{$set:{stock:18,available:true}})
+
+db.products.updateOne({product_id:104},{$inc:{stock:10}})
+
+db.products.updateOne({product_id:106},{$inc:{stock:-3}})
+
+db.products.updateOne({product_id:101},{$set:{discount_price:10}})
+
+db.products.updateOne({product_id:101},{$unset:{discount_price:""}})
+
+db.products.deleteOne({product_id:109})
+
+db.products.deleteMany({stock:0})
+
+db.products.find()
+
+Part 3 - Filtering and Query:
+
+db.products.find({category:"Electronics"})
+
+db.products.find({price:{$gt:10000}})
+
+db.products.find({price:{$gt:5000,$lt:30000}})
+
+db.products.find({stock:{$lt:10}})
+
+db.products.find({available:true})
+
+db.products.find({available:false})
+
+db.products.find({$or:[{category:'Electronics'},{category:'Furniture'}]})
+
+db.products.find({category:{$ne:"Accessories"}})
+
+db.products.find({$and:[{price:{$gt:10000}},{stock:{$gt:5}}]})
+
+db.products.find({$or:[{category:"Electronics"},{price:{$lt:5000}}]})
+
+db.products.find({launch_date:{$gt:ISODate("2026-02-01T00:00:00Z")}})
+
+db.products.find({launch_date:{$gt:ISODate("2026-01-01T00:00:00Z"),$lt:ISODate("2026-03-31T00:00:00Z")}})
+
+part 4 - Projections and Sorting 
+
+db.products.find({},{_id:false,product_name:true,price:true})
+
+db.products.find({},{_id:false,product_name:true,category:true,stock:true})
+
+db.products.find().sort({price:1})
+
+db.products.find().sort({price:-1})
+
+db.products.find().sort({price:1})
+
+db.products.find().sort({product_name:1})
+
+db.products.find().sort({price:-1}).limit(3)
+
+db.products.find().sort({stock:1}).limit(2)
+
+Part 5 - Arrays :
+
+db.products.find({colors:{$in:["Black"]}})
+
+db.products.find({colors:{$all:["Black","Silver"]}})
+
+db.products.find({colors:{$in:["Black","White"]}})
+
+db.products.updateOne({product_id:101},{$push:{colors:"Grey"}})
+
+db.products.updateOne({product_id:101},{$addToSet:{colors:"Black"}})
+
+db.products.updateOne({product_id:102},{$pull:{colors:"Red"}})
+
+Part 6 - Embedded Documents :
+
+db.products.find({"specifications.warranty_years":2})
+
+db.products.find({"specifications.adjustable":true})
+
+db.products.find({"specifications.wireless":true})
+
+db.products.updateOne({product_id:103},{$set:{"specifications.warranty_years":5}})
+
+db.products.updateMany({product_id:{$in:[101,102]}},{$set:{country_of_origin:"India"}})
+
+Part 7 - Data Types
+
+db.products.find({price:{$type:["int","double","long","decimal"]}})
+
+db.products.aggregate({$project:{launch_date_datatype:{$type:"$launch_date"}}})
+
+db.products.aggregate([{$project:{colors_dt:{$type:"$colors"},_id:false}},{$limit:1}])
+
+db.products.aggregate([{$project:{specifications_dt:{$type:"$specifications"},_id:false}},{$limit:1}])
+
+db.products.find({price:{$type:"string"}})
+
+db.products.updateOne({product_id:107},[{$set:{price:{$toInt:"$price"}}}])
+
+Part 8 - Customer Collections :
+
+db.customers.find()
+
+db.customers.find({active:true})
+
+db.customers.find({"address.city":"Hyderabad"})
+
+db.customers.find({interests:"Electronics"})
+
+db.customers.find({interests:{$all:["Furniture","Electronics"]}})
+
+db.customers.updateOne({customer_id:503},{$set:{active:true}})
+
+db.customers.updateOne({customer_id:504},{$set:{"address.city":"Goa"}})
+
+db.customers.updateOne({customer_id:502},{$push:{interests:"Accessories"}})
+
+Part  9 - Array of Embedded Documents :
+
+db.orders.find({status:"Delivered"})
+
+db.orders.find({"items.product":"Ultra Laptop"})
+
+db.orders.find({$and:[{"items.product":"Smart Monitor"},{"items.quantity":2}]})
+
+db.orders.find({items:{$elemMatch:{product:"Smart Monitor",quantity:2}}})
+
+db.orders.updateOne({order_id:9002},{$push:{items:{product:'Apple Watch',quantity:1,price:30000}}})
+
+db.orders.updateOne({order_id:9002},{$set:{status:"Delivered"}})
+
+db.orders.updateOne({order_id:9002},{$pull:{items:{product:"Apple Watch"}}})
+
+Part 10 - Document Design
+
+-> product can have five colors so storing it in a  Array is the effective way.
+-> customer has one residential address so storing it as a embedded document must be wasy to store the details like city, street, etc.
+->Use an array of embedded documents to store various products for an order with the product details as an embedded document inside the array of items.
+->product information must be stored as an embedded document 
+->Seperate collection for reviews and customer order over years 
+->simple field for employee name
+->Array for multiple tags for a product so that we can store multiple things about the product.
+
+
+Final Challenge - Suppliers 
+
+db.suppliers.find({active_status:true})
+
+db.suppliers.find({city:"Mumbai"})
+
+db.suppliers.find({categories:"Electronics"})
+
+db.suppliers.find({registration_date:{$gt:ISODate("2026-01-01T00:00:00Z")}})
+
+db.suppliers.updateOne({supplier_id:1005},{$push:{warehouses:"Warehouse-East-Chennai"}})
+
+db.suppliers.updateOne({supplier_id:1005},{$set:{active_status:false}})
+
+db.suppliers.updateOne({supplier_id:1005},{$pull:{warehouses:"Warehouse-East-Chennai"}})
+
+db.suppliers.find({},{_id:false,supplier_name:true,city:true})
+
+db.suppliers.find().sort({registration_date:1})
+
+Explanation 
+
+-> I used an array for categories because a single supplier may supply more than one type of products
+-> Contacts contain several details like phone number, email, WhatsApp number etc, so I used an embedded document
+-> a supplier may have two or more ware houses located at various location so i used array to store all those.
+
+
+
+
+
+
+
+
