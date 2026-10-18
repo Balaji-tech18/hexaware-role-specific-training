@@ -1,0 +1,15 @@
+import pandas as pd
+
+registrations = pd.read_csv("registrations.csv")
+print(registrations.head())
+print(registrations.tail())
+print(registrations.shape)
+print(registrations.columns)
+print(registrations.dtypes)
+print(registrations[["attendee_name", "city", "status", "amount"]])
+print(registrations.query("status == 'Confirmed'"))
+print(registrations.query("amount > 6000"))
+print(registrations.query("status == 'Confirmed' and city == 'Hyderabad'"))
+print(registrations.groupby("status").size())
+print(registrations.groupby("status")["amount"].sum())
+print(registrations.groupby("city")["amount"].mean())
