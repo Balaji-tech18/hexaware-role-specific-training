@@ -1,0 +1,7 @@
+supplier_id,supplier_name,total_orders,delayed_orders,total_quantity
+205,Prime Industrial Supply,5,5,2495
+206,East Coast Logistics,5,5,2680
+202,Metro Packaging Co,5,4,1940
+203,Greenline Electronics,5,4,2125
+201,Southern Components Ltd,5,0,1755
+204,Reliable Plastics,5,0,2310

@@ -1,0 +1,19 @@
+supplier_id,supplier_name,product_name,sku,quantity_on_hand,reorder_level,reorder_quantity,warehouse_location
+201,Southern Components Ltd,USB-C Cable,SKU-CBL-01,25,100,300,Chennai-A1
+203,Greenline Electronics,Wireless Mouse,SKU-MSE-03,18,50,150,Bengaluru-C1
+205,Prime Industrial Supply,Keyboard,SKU-KBD-05,12,40,100,Chennai-A2
+206,East Coast Logistics,Packing Tape,SKU-TAP-06,30,50,250,Chennai-A1
+202,Metro Packaging Co,Power Adapter,SKU-ADP-08,22,35,120,Bengaluru-C1
+204,Reliable Plastics,Laptop Sleeve,SKU-SLV-10,15,25,90,Chennai-A2
+205,Prime Industrial Supply,USB-C Cable,SKU-CBL-01,25,100,300,Chennai-A1
+201,Southern Components Ltd,Wireless Mouse,SKU-MSE-03,18,50,150,Bengaluru-C1
+203,Greenline Electronics,Keyboard,SKU-KBD-05,12,40,100,Chennai-A2
+204,Reliable Plastics,Packing Tape,SKU-TAP-06,30,50,250,Chennai-A1
+206,East Coast Logistics,Power Adapter,SKU-ADP-08,22,35,120,Bengaluru-C1
+202,Metro Packaging Co,Laptop Sleeve,SKU-SLV-10,15,25,90,Chennai-A2
+203,Greenline Electronics,USB-C Cable,SKU-CBL-01,25,100,300,Chennai-A1
+205,Prime Industrial Supply,Wireless Mouse,SKU-MSE-03,18,50,150,Bengaluru-C1
+201,Southern Components Ltd,Keyboard,SKU-KBD-05,12,40,100,Chennai-A2
+202,Metro Packaging Co,Packing Tape,SKU-TAP-06,30,50,250,Chennai-A1
+204,Reliable Plastics,Power Adapter,SKU-ADP-08,22,35,120,Bengaluru-C1
+206,East Coast Logistics,Laptop Sleeve,SKU-SLV-10,15,25,90,Chennai-A2

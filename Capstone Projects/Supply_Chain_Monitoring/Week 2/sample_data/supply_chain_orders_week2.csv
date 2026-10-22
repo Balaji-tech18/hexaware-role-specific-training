@@ -1,0 +1,31 @@
+order_id,supplier_id,supplier_name,product_name,sku,order_date,expected_delivery_date,actual_delivery_date,quantity,order_status,quantity_on_hand,reorder_level,reorder_quantity,warehouse_location
+2001,201,Southern Components Ltd,USB-C Cable,SKU-CBL-01,2026-09-03,2026-09-09,2026-09-08,87,Delivered,25,100,300,Chennai-A1
+2002,202,Metro Packaging Co,Shipping Box - Medium,SKU-BOX-02,2026-09-05,2026-09-12,,124,Delayed,450,200,800,Mumbai-B2
+2003,203,Greenline Electronics,Wireless Mouse,SKU-MSE-03,2026-09-07,2026-09-12,,161,In Transit,18,50,150,Bengaluru-C1
+2004,204,Reliable Plastics,Plastic Storage Bin,SKU-BIN-04,2026-09-09,2026-09-15,2026-09-14,198,Delivered,160,60,200,Hyderabad-D3
+2005,205,Prime Industrial Supply,Keyboard,SKU-KBD-05,2026-09-11,2026-09-18,,235,Placed,12,40,100,Chennai-A2
+2006,206,East Coast Logistics,Packing Tape,SKU-TAP-06,2026-09-13,2026-09-18,,272,Delayed,30,50,250,Chennai-A1
+2007,201,Southern Components Ltd,Monitor Stand,SKU-STD-07,2026-09-15,2026-09-21,2026-09-20,309,Delivered,80,30,100,Mumbai-B2
+2008,202,Metro Packaging Co,Power Adapter,SKU-ADP-08,2026-09-17,2026-09-24,,346,Delayed,22,35,120,Bengaluru-C1
+2009,203,Greenline Electronics,Bubble Wrap Roll,SKU-BWR-09,2026-09-19,2026-09-24,,383,In Transit,110,80,300,Hyderabad-D3
+2010,204,Reliable Plastics,Laptop Sleeve,SKU-SLV-10,2026-09-02,2026-09-08,2026-09-07,420,Delivered,15,25,90,Chennai-A2
+2011,205,Prime Industrial Supply,USB-C Cable,SKU-CBL-01,2026-09-04,2026-09-11,,457,Placed,25,100,300,Chennai-A1
+2012,206,East Coast Logistics,Shipping Box - Medium,SKU-BOX-02,2026-09-06,2026-09-11,,494,Delayed,450,200,800,Mumbai-B2
+2013,201,Southern Components Ltd,Wireless Mouse,SKU-MSE-03,2026-09-08,2026-09-14,2026-09-13,531,Delivered,18,50,150,Bengaluru-C1
+2014,202,Metro Packaging Co,Plastic Storage Bin,SKU-BIN-04,2026-09-10,2026-09-17,,568,Delayed,160,60,200,Hyderabad-D3
+2015,203,Greenline Electronics,Keyboard,SKU-KBD-05,2026-09-12,2026-09-17,,605,In Transit,12,40,100,Chennai-A2
+2016,204,Reliable Plastics,Packing Tape,SKU-TAP-06,2026-09-14,2026-09-20,2026-09-19,642,Delivered,30,50,250,Chennai-A1
+2017,205,Prime Industrial Supply,Monitor Stand,SKU-STD-07,2026-09-16,2026-09-23,,679,Placed,80,30,100,Mumbai-B2
+2018,206,East Coast Logistics,Power Adapter,SKU-ADP-08,2026-09-18,2026-09-23,,716,Delayed,22,35,120,Bengaluru-C1
+2019,201,Southern Components Ltd,Bubble Wrap Roll,SKU-BWR-09,2026-09-01,2026-09-07,2026-09-06,753,Delivered,110,80,300,Hyderabad-D3
+2020,202,Metro Packaging Co,Laptop Sleeve,SKU-SLV-10,2026-09-03,2026-09-10,,790,Delayed,15,25,90,Chennai-A2
+2021,203,Greenline Electronics,USB-C Cable,SKU-CBL-01,2026-10-05,2026-10-10,,827,In Transit,25,100,300,Chennai-A1
+2022,204,Reliable Plastics,Shipping Box - Medium,SKU-BOX-02,2026-10-07,2026-10-13,2026-10-12,864,Delivered,450,200,800,Mumbai-B2
+2023,205,Prime Industrial Supply,Wireless Mouse,SKU-MSE-03,2026-10-09,2026-10-16,,901,Placed,18,50,150,Bengaluru-C1
+2024,206,East Coast Logistics,Plastic Storage Bin,SKU-BIN-04,2026-10-11,2026-10-16,,938,Delayed,160,60,200,Hyderabad-D3
+2025,201,Southern Components Ltd,Keyboard,SKU-KBD-05,2026-10-13,2026-10-19,2026-10-18,75,Delivered,12,40,100,Chennai-A2
+2026,202,Metro Packaging Co,Packing Tape,SKU-TAP-06,2026-10-15,2026-10-22,,112,Delayed,30,50,250,Chennai-A1
+2027,203,Greenline Electronics,Monitor Stand,SKU-STD-07,2026-10-17,2026-10-22,,149,In Transit,80,30,100,Mumbai-B2
+2028,204,Reliable Plastics,Power Adapter,SKU-ADP-08,2026-10-19,2026-10-25,2026-10-24,186,Delivered,22,35,120,Bengaluru-C1
+2029,205,Prime Industrial Supply,Bubble Wrap Roll,SKU-BWR-09,2026-10-02,2026-10-09,,223,Placed,110,80,300,Hyderabad-D3
+2030,206,East Coast Logistics,Laptop Sleeve,SKU-SLV-10,2026-10-04,2026-10-09,,260,Delayed,15,25,90,Chennai-A2
