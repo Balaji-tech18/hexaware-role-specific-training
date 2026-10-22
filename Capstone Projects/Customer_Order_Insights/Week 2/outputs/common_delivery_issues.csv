@@ -1,0 +1,6 @@
+issue_type,order_count,delayed_orders
+Address verification,4,3
+Weather delay,4,3
+Courier delay,3,3
+Sorting facility backlog,3,2
+Tracking update issue,2,2

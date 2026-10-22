@@ -1,0 +1,4 @@
+Input records: 30
+Delayed orders: 16
+Customers represented: 10
+Total order value: 88175.00

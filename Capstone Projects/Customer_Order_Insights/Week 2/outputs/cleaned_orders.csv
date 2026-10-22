@@ -1,0 +1,31 @@
+order_id,customer_id,customer_name,region,city,order_date,expected_delivery_date,actual_delivery_date,status,issue_type,order_amount,delay_days,is_delayed
+1001,1,Arun Kumar,South,Chennai,2026-09-03,2026-09-09,2026-09-08,Delivered,,616.0,0,0
+1002,2,Meena Ravi,South,Coimbatore,2026-09-05,2026-09-12,2026-09-11,Delivered,,933.0,0,0
+1003,3,Rahul Sharma,South,Hyderabad,2026-09-07,2026-09-12,,In Transit,Sorting facility backlog,1250.0,40,1
+1004,4,Priya Nair,South,Bengaluru,2026-09-09,2026-09-15,2026-09-17,Delivered,Address verification,1567.0,2,1
+1005,5,Karan Shah,West,Mumbai,2026-09-11,2026-09-18,,Packed,Tracking update issue,1884.0,34,1
+1006,6,Divya Menon,South,Kochi,2026-09-13,2026-09-18,,Delayed,,2201.0,34,1
+1007,7,Vikram Iyer,South,Madurai,2026-09-15,2026-09-21,,Placed,Courier delay,2518.0,31,1
+1008,8,Ananya Das,East,Kolkata,2026-09-17,2026-09-24,2026-09-26,Delivered,Weather delay,2835.0,2,1
+1009,9,Rohit Verma,North,Delhi,2026-09-19,2026-09-24,2026-09-23,Delivered,,3152.0,0,0
+1010,10,Sneha Patel,West,Pune,2026-09-02,2026-09-08,,In Transit,Address verification,3469.0,44,1
+1011,1,Arun Kumar,South,Chennai,2026-09-04,2026-09-11,2026-09-10,Delivered,,3786.0,0,0
+1012,2,Meena Ravi,South,Coimbatore,2026-09-06,2026-09-11,,Packed,,4103.0,41,1
+1013,3,Rahul Sharma,South,Hyderabad,2026-09-08,2026-09-14,,Delayed,Courier delay,4420.0,38,1
+1014,4,Priya Nair,South,Bengaluru,2026-09-10,2026-09-17,,Placed,Weather delay,4737.0,35,1
+1015,5,Karan Shah,West,Mumbai,2026-09-12,2026-09-17,2026-09-16,Delivered,,5054.0,0,0
+1016,6,Divya Menon,South,Kochi,2026-09-14,2026-09-20,2026-09-22,Delivered,Address verification,5371.0,2,1
+1017,7,Vikram Iyer,South,Madurai,2026-09-16,2026-09-23,,In Transit,Tracking update issue,5688.0,29,1
+1018,8,Ananya Das,East,Kolkata,2026-09-18,2026-09-23,2026-09-22,Delivered,,6005.0,0,0
+1019,9,Rohit Verma,North,Delhi,2026-09-01,2026-09-07,,Packed,Courier delay,6322.0,45,1
+1020,10,Sneha Patel,West,Pune,2026-09-03,2026-09-10,,Delayed,Weather delay,439.0,42,1
+1021,1,Arun Kumar,South,Chennai,2026-10-05,2026-10-10,,Placed,Sorting facility backlog,756.0,12,1
+1022,2,Meena Ravi,South,Coimbatore,2026-10-07,2026-10-13,2026-10-12,Delivered,,1073.0,0,0
+1023,3,Rahul Sharma,South,Hyderabad,2026-10-09,2026-10-16,2026-10-15,Delivered,,1390.0,0,0
+1024,4,Priya Nair,South,Bengaluru,2026-10-11,2026-10-16,,In Transit,,1707.0,6,1
+1025,5,Karan Shah,West,Mumbai,2026-10-13,2026-10-19,2026-10-18,Delivered,,2024.0,0,0
+1026,6,Divya Menon,South,Kochi,2026-10-15,2026-10-22,,Packed,Weather delay,2341.0,0,0
+1027,7,Vikram Iyer,South,Madurai,2026-10-17,2026-10-22,,Delayed,Sorting facility backlog,2658.0,0,0
+1028,8,Ananya Das,East,Kolkata,2026-10-19,2026-10-25,,Placed,Address verification,2975.0,0,0
+1029,9,Rohit Verma,North,Delhi,2026-10-02,2026-10-09,2026-10-08,Delivered,,3292.0,0,0
+1030,10,Sneha Patel,West,Pune,2026-10-04,2026-10-09,2026-10-08,Delivered,,3609.0,0,0
