@@ -1,0 +1,31 @@
+order_id,customer_id,order_date,expected_delivery_date,actual_delivery_date,status,issue_type,order_amount
+1001,1,2026-09-03,2026-09-09,2026-09-08,Delivered,Courier delay,616
+1002,2,2026-09-05,2026-09-12,2026-09-11,Delivered,Weather delay,933
+1003,3,2026-09-07,2026-09-12,,In Transit,Sorting facility backlog,1250
+1004,4,2026-09-09,2026-09-15,2026-09-17,Delivered,Address verification,1567
+1005,5,2026-09-11,2026-09-18,,Packed,Tracking update issue,1884
+1006,6,2026-09-13,2026-09-18,,Delayed,,2201
+1007,7,2026-09-15,2026-09-21,,Placed,Courier delay,2518
+1008,8,2026-09-17,2026-09-24,2026-09-26,Delivered,Weather delay,2835
+1009,9,2026-09-19,2026-09-24,2026-09-23,Delivered,Sorting facility backlog,3152
+1010,10,2026-09-02,2026-09-08,,In Transit,Address verification,3469
+1011,1,2026-09-04,2026-09-11,2026-09-10,Delivered,Tracking update issue,3786
+1012,2,2026-09-06,2026-09-11,,Packed,,4103
+1013,3,2026-09-08,2026-09-14,,Delayed,Courier delay,4420
+1014,4,2026-09-10,2026-09-17,,Placed,Weather delay,4737
+1015,5,2026-09-12,2026-09-17,2026-09-16,Delivered,Sorting facility backlog,5054
+1016,6,2026-09-14,2026-09-20,2026-09-22,Delivered,Address verification,5371
+1017,7,2026-09-16,2026-09-23,,In Transit,Tracking update issue,5688
+1018,8,2026-09-18,2026-09-23,2026-09-22,Delivered,,6005
+1019,9,2026-09-01,2026-09-07,,Packed,Courier delay,6322
+1020,10,2026-09-03,2026-09-10,,Delayed,Weather delay,439
+1021,1,2026-10-05,2026-10-10,,Placed,Sorting facility backlog,756
+1022,2,2026-10-07,2026-10-13,2026-10-12,Delivered,Address verification,1073
+1023,3,2026-10-09,2026-10-16,2026-10-15,Delivered,Tracking update issue,1390
+1024,4,2026-10-11,2026-10-16,,In Transit,,1707
+1025,5,2026-10-13,2026-10-19,2026-10-18,Delivered,Courier delay,2024
+1026,6,2026-10-15,2026-10-22,,Packed,Weather delay,2341
+1027,7,2026-10-17,2026-10-22,,Delayed,Sorting facility backlog,2658
+1028,8,2026-10-19,2026-10-25,,Placed,Address verification,2975
+1029,9,2026-10-02,2026-10-09,2026-10-08,Delivered,Tracking update issue,3292
+1030,10,2026-10-04,2026-10-09,2026-10-08,Delivered,,3609
