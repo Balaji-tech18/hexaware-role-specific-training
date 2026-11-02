@@ -1,0 +1,21 @@
+supplier_id,order_id,product_name,sku,order_date,expected_delivery_date,actual_delivery_date,quantity,order_status,supplier_name,delay_days,is_delayed
+202,2002,Shipping Box - Medium,SKU-BOX-02,2026-09-05,2026-09-12,,124,Delayed,Metro Packaging Co,51,true
+203,2003,Wireless Mouse,SKU-MSE-03,2026-09-07,2026-09-12,,161,In Transit,Greenline Electronics,51,true
+205,2005,Keyboard,SKU-KBD-05,2026-09-11,2026-09-18,,235,Placed,Prime Industrial Supply,45,true
+206,2006,Packing Tape,SKU-TAP-06,2026-09-13,2026-09-18,,272,Delayed,East Coast Logistics,45,true
+202,2008,Power Adapter,SKU-ADP-08,2026-09-17,2026-09-24,,346,Delayed,Metro Packaging Co,39,true
+203,2009,Bubble Wrap Roll,SKU-BWR-09,2026-09-19,2026-09-24,,383,In Transit,Greenline Electronics,39,true
+205,2011,USB-C Cable,SKU-CBL-01,2026-09-04,2026-09-11,,457,Placed,Prime Industrial Supply,52,true
+206,2012,Shipping Box - Medium,SKU-BOX-02,2026-09-06,2026-09-11,,494,Delayed,East Coast Logistics,52,true
+202,2014,Plastic Storage Bin,SKU-BIN-04,2026-09-10,2026-09-17,,568,Delayed,Metro Packaging Co,46,true
+203,2015,Keyboard,SKU-KBD-05,2026-09-12,2026-09-17,,605,In Transit,Greenline Electronics,46,true
+205,2017,Monitor Stand,SKU-STD-07,2026-09-16,2026-09-23,,679,Placed,Prime Industrial Supply,40,true
+206,2018,Power Adapter,SKU-ADP-08,2026-09-18,2026-09-23,,716,Delayed,East Coast Logistics,40,true
+202,2020,Laptop Sleeve,SKU-SLV-10,2026-09-03,2026-09-10,,790,Delayed,Metro Packaging Co,53,true
+203,2021,USB-C Cable,SKU-CBL-01,2026-10-05,2026-10-10,,827,In Transit,Greenline Electronics,23,true
+205,2023,Wireless Mouse,SKU-MSE-03,2026-10-09,2026-10-16,,901,Placed,Prime Industrial Supply,17,true
+206,2024,Plastic Storage Bin,SKU-BIN-04,2026-10-11,2026-10-16,,938,Delayed,East Coast Logistics,17,true
+202,2026,Packing Tape,SKU-TAP-06,2026-10-15,2026-10-22,,112,Delayed,Metro Packaging Co,11,true
+203,2027,Monitor Stand,SKU-STD-07,2026-10-17,2026-10-22,,149,In Transit,Greenline Electronics,11,true
+205,2029,Bubble Wrap Roll,SKU-BWR-09,2026-10-02,2026-10-09,,223,Placed,Prime Industrial Supply,24,true
+206,2030,Laptop Sleeve,SKU-SLV-10,2026-10-04,2026-10-09,,260,Delayed,East Coast Logistics,24,true

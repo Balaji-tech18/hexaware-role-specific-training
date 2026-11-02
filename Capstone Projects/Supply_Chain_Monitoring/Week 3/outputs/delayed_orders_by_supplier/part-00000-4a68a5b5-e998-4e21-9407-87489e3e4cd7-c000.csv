@@ -1,0 +1,7 @@
+supplier_id,supplier_name,total_orders,delayed_orders,average_delay_days
+205,Prime Industrial Supply,5,5,35.6
+206,East Coast Logistics,5,5,35.6
+203,Greenline Electronics,5,5,34.0
+201,Southern Components Ltd,5,0,-1.0
+204,Reliable Plastics,5,0,-1.0
+202,Metro Packaging Co,5,5,40.0
