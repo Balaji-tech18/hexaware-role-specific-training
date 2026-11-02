@@ -1,0 +1,54 @@
+1.What is Cloud Computing?
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet known as cloud.
+
+2.What is Azure Cloud?
+
+Microsoft Azure is a public cloud computing platform developed by Microsoft.
+
+•  IaaS : Rent raw virtual machines, storage disks, and networking components.
+•  PaaS : Build and deploy applications without managing the underlying operating systems or hardware.
+•  SaaS : Use cloud-delivered software and applications (such as Microsoft 365).
+•  Serverless Computing: Run event-driven code or functions without provisioning or managing servers.
+
+
+3.Key Advantages of Cloud Computing?
+
+• Cost Savings & Pay-as-You-Go Model: Replaces large upfront hardware capital expenditures with a flexible operational expenditure model where you pay only for the resources you consume.
+
+• Scalability and Flexibility: Lets you scale compute power or storage up or down instantly to handle traffic spikes or quiet seasons without buying physical servers.
+
+• Global Accessibility and Mobility: Enables teams to access files, applications, and data from anywhere in the world on any internet-connected device.
+
+• Improved Collaboration: Establishes a centralized "single source of truth" where multiple people can view and edit shared documents in real time, preventing version control conflicts.
+
+• Automatic Updates and Maintenance: Offloads routine infrastructure upkeep, software patches, and hardware maintenance to the third-party provider.
+
+• Enhanced Security and Backup: Provides enterprise-grade features like automated backups, disaster recovery, data encryption, and remote-wiping capabilities.
+
+• Faster Time to Market: Allows developers to provision virtual instances and test new applications in minutes rather than waiting weeks for physical hardware procurement
+
+4. What is IaaS, PaaS, SaaS?
+
+IaaS (Infrastructure as a Service)
+
+• What it is: Raw virtual computing resources like servers, storage, and networking delivered over the internet.
+• Your responsibility: You manage the operating system, middleware, application data, and runtimes.
+• Provider's responsibility: The vendor manages the physical hardware, data centers, and virtualization.
+• Who it is for: Developers and system administrators who want maximum control.
+• Examples: Amazon Web Services (AWS) EC2, Microsoft Azure Virtual Machines, Google Cloud Compute Engine.
+
+PaaS (Platform as a Service)
+
+• What it is: A ready-to-use cloud environment with tools to build, test, and deploy applications without managing underlying hardware or servers.
+• Your responsibility: You control your custom application code and data.
+• Provider's responsibility: The vendor manages the infrastructure, operating systems, and runtime environments.
+• Who it is for: Software developers who want to write code faster without worrying about server setup.
+• Examples: Heroku, AWS Elastic Beanstalk, Red Hat OpenShift.
+
+SaaS (Software as a Service)
+
+• What it is: Fully functional, ready-to-use software applications delivered over the web through a browser or subscription.
+• Your responsibility: You only manage user accounts, access, and your data inside the app.
+• Provider's responsibility: The vendor manages everything else—servers, databases, updates, and security.
+• Who it is for: Everyday end-users and businesses needing plug-and-play tools.
+• Examples: Google Workspace (Gmail, Docs), Microsoft 365, Salesforce, Dropbox.
