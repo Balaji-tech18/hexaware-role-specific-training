@@ -1,0 +1,53 @@
+Databricks is a cloud-based data platform used to store, process, analyze, and visualize large amounts of data.
+
+It combines data engineering, data analytics, machine learning, and AI capabilities in one platform.
+Key features
+- Apache Spark: Processes large datasets efficiently using distributed computing.
+- Lakehouse: Combines the capabilities of data lakes and data warehouses.
+- Notebooks: Write and execute Python, SQL, Scala, and other supported languages.
+- Delta Lake: Supports reliable data storage, transactions, and data versioning.
+- Visualization: Create charts and dashboards from datasets and query results.
+
+2. Data Exploration in Databricks
+
+Data exploration is the process of examining a dataset to understand its structure, contents, quality, and patterns before performing deeper analysis.
+
+In Databricks, you can explore data using Python, PySpark, SQL, and notebook visualizations.
+Common exploration operations
+Operation	Purpose
+display(df)	View data in a table
+df.printSchema()	Inspect column names and data types
+df.count()	Count the rows
+df.columns	List column names
+df.describe()	View statistical summaries
+df.show()	Display sample records
+
+3. What is EDA?
+EDA (Exploratory Data Analysis) is the process of analyzing a dataset using statistics and visualizations to discover patterns, identify anomalies, and understand relationships between variables.
+
+EDA is more than just viewing data. It helps you decide what cleaning, transformation, and analysis are needed next.
+Typical EDA workflow
+
+	1. Understand the dataset
+   
+ 	  Inspect rows, columns, data types, and dimensions.
+
+	2. Check data quality
+   
+ 	  Find missing values, duplicate records, and invalid values.
+
+	3. Analyze statistics
+   
+	   Calculate mean, median, minimum, maximum, and standard deviation.
+
+	4. Explore distributions
+	   
+ 	  Use histograms and box plots to identify skewness and outliers.
+
+	5. Explore relationships
+   
+  	 Use correlation, grouping, and scatter plots to discover patterns.
+
+	6. Summarize findings
+   
+   	Record insights and decide what transformations or further analysis are needed.

@@ -1,0 +1,50 @@
+A Virtual Machine (VM) is a software-based computer that runs inside a physical computer. It behaves like a real computer, with its own operating system, CPU, memory, storage, and network connection.
+
+In Azure, an Azure Virtual Machine is a cloud-based computer that you can create, configure, and manage without owning physical hardware.
+Example
+Suppose you need a Windows Server for your application. Instead of purchasing a physical server, you can create an Azure VM, install Windows Server, deploy your application, and access it remotely.
+
+Components of an Azure VM
+
+1. VM Size (CPU and Memory)
+
+Defines the processing power and RAM available to the VM.
+
+Example: 2 vCPUs and 8 GB RAM
+
+
+2. Operating System (OS)
+
+The software environment running on the VM.
+
+Examples: Windows Server, Ubuntu Linux
+
+3. Disks
+
+Provide persistent storage for the OS, applications, and data.
+- OS disk: Stores the operating system.
+- Data disk: Stores application and user data.
+- Temporary disk: Provides temporary storage that may be lost during certain VM operations.
+
+4. Networking
+
+Connects the VM to other resources and the internet.
+- Virtual Network (VNet)
+- Network Interface (NIC)
+- Private and public IP addresses
+- Network Security Group (NSG)
+
+5. Security and Identity
+
+Controls access to the VM and protects it.
+
+Examples: SSH keys, Microsoft Entra ID, NSG rules, managed identities
+
+6. VM Extensions
+
+Add configuration and management capabilities after deployment.
+
+Examples: Custom Script Extension, Azure Monitor Agent
+
+
+

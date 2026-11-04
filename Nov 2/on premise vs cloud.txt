@@ -1,0 +1,16 @@
+On Premise Computing needs so much work ,
+for example let we say the big billion days is coming and there is lot of traffic for 2 months so hexaware bought two on premise servers to maintain the traffic and load.
+Problems or Work Hexaware had to face :
+->need approval from CTO , Directors etc.,
+->Buying and setup of server takes 2-3 weeks of time 
+->need network engineers for 24/7 , so 3 teams and 1 backup team need which costs investment
+->need to pay rent for the server room.
+->power supply needed for 24/7
+
+Then comes the real problem , after the 2 month the traffic is back to normal and the use of the newly bought servers is no more needed which  results in poor ROI.
+
+That is why Cloud Computing is more profitable and useful because ,
+->It is scalable we can buy as much servers we need for a particular time and then stop paying for it when the use is completed.
+->It is elastic , we can increase and decrease the servers or services we want as per need. 
+->no need of physical server room or IT team to maintain it . 
+
