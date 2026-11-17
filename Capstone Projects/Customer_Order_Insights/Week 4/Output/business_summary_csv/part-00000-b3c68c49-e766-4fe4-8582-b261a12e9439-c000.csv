@@ -1,0 +1,13 @@
+city,total_orders,delayed_orders,total_order_value,average_delay_days
+Kochi,2,2,4736.0,149.5
+Chennai,3,1,6693.0,97.66666666666667
+Vizag,2,1,5832.0,0.5
+Mumbai,3,0,7104.0,0.0
+Salem,2,0,5010.0,0.0
+Trichy,2,1,5284.0,153.0
+Madurai,3,1,8748.0,104.66666666666667
+Pune,2,0,4462.0,0.0
+Delhi,2,0,5558.0,0.0
+Coimbatore,3,1,8337.0,103.66666666666667
+Bengaluru,4,3,9176.0,71.75
+Hyderabad,3,1,7515.0,100.33333333333333

@@ -1,0 +1,15 @@
+customer_id,customer_name,city,email
+C001,Aarav Stores,Chennai,aaravstores@example.com
+C002,Metro Mart,Mumbai,metromart@example.com
+C003,Fresh Foods,Hyderabad,freshfoods@example.com
+C004,Quick Shop,Bengaluru,quickshop@example.com
+C005,Green Basket,Coimbatore,greenbasket@example.com
+C006,City Bazaar,Madurai,citybazaar@example.com
+C007,Daily Needs,Pune,dailyneeds@example.com
+C008,Prime Retail,Kochi,primeretail@example.com
+C009,Sunrise Traders,Salem,sunrisetraders@example.com
+C010,Value Point,Trichy,valuepoint@example.com
+C011,North Star,Delhi,northstar@example.com
+C012,Ocean Mart,Vizag,oceanmart@example.com
+C003,Fresh Foods,Hyderabad,freshfoods@example.com
+C013,  ,Chennai,bad@example.com
