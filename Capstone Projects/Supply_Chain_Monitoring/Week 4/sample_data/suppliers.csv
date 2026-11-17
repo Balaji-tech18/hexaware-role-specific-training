@@ -1,0 +1,11 @@
+supplier_id,supplier_name,city,region
+S001,Apex Components,Chennai,South
+S002,Global Supplies,Mumbai,West
+S003,Rapid Logistics,Hyderabad,South
+S004,Prime Materials,Delhi,North
+S005,Eastern Traders,Kolkata,East
+S006,Reliable Parts,Bengaluru,South
+S007,Coastal Wholesale,Kochi,South
+S008,Metro Distributors,Pune,West
+S003,Rapid Logistics,Hyderabad,South
+S009,  ,Jaipur,North

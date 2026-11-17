@@ -1,0 +1,9 @@
+supplier_id,supplier_name,region,total_shipments,delayed_shipments,total_shipment_cost,average_delay_days
+S005,Eastern Traders,EAST,4,0,23068.0,0.0
+S001,Apex Components,SOUTH,4,1,19052.0,0.75
+S008,Metro Distributors,WEST,3,1,16548.0,97.66666666666667
+S003,Rapid Logistics,SOUTH,4,1,21060.0,0.75
+S002,Global Supplies,WEST,4,1,20056.0,74.0
+S007,Coastal Wholesale,SOUTH,3,1,15795.0,1.0
+S006,Reliable Parts,SOUTH,4,2,24072.0,155.0
+S004,Prime Materials,NORTH,5,2,27164.0,116.6
