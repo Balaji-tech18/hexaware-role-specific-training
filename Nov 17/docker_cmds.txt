@@ -1,0 +1,14 @@
+docker run -d \
+-p 8080:8080 \
+--name airflow \
+apache/airflow standalone
+
+docker ps
+
+docker logs airflow
+
+docker exec -it airflow bash
+
+cd /opt/airflow/dags
+
+
